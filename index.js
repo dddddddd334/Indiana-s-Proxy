@@ -11,3 +11,4 @@ app.use(express.static('static'));
 // Start the server
 app.listen(port);
 console.log('app listening on port ' + port + '')
+// End of the server code for Aluben go to static folder for front-end code
