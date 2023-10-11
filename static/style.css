@@ -173,6 +173,7 @@ select {
 background-color: #3d3d3d;
 }
 #minidiv {
+  position: absolute;
   background-color: #333333;
   border-radius: 50px;
   width: 600px;
