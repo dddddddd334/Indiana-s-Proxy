@@ -7,6 +7,6 @@ ________________________________________________________________________________
 
 ![traf](./assets/images/logo.jpeg)
 
-## Azure
+## node
 
-this is Aluben Node.
+this is Aluben coded in node.js. this lets us connect it in the future to things like a sql database to save settings
