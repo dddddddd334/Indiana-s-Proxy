@@ -6,7 +6,7 @@ const app = express();
 const port = 3000;
 
 //serve static files(eg, .html .js etc) from the folder static for the code of you express app
-app.use(express.static("static"));
+app.use(express.static("public"));
 
 // Start the server
 app.listen(port),
