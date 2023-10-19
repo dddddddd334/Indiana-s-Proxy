@@ -242,19 +242,18 @@ var maxnumber = 100;
 var randomNumber = Math.floor(Math.random() * (maxnumber + 1) + minnumber);
 
 // Check if the random number equal to 43
-  if (randomNumber == '43') {
-    var h = 'traf';
-    var poop = document.getElementById("traf-say")
-    poop.style.display = "block";
-    console.log(h)
-  }
-});
-function panic() {
-  window.open(url, '_self')
+if (randomNumber == "43") {
+  var h = "traf";
+  var poop = document.getElementById("traf-say");
+  poop.style.display = "block";
+  console.log(h);
 }
-window.addEventListener("keydown", function(event) {
+function panic() {
+  window.open(url, "_self");
+}
+window.addEventListener("keydown", function (event) {
   // Check if the ` key was pressed
   if (event.keyCode === 192) {
-    panic()
+    panic();
   }
 });
