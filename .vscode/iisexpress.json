@@ -1,6 +1,6 @@
 {
   "port": 3006,
-  "path": "./",
+  "path": "./public",
   "clr": "v4.0",
   "protocol": "http"
 }
