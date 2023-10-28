@@ -265,8 +265,14 @@
     </div>
     <div id = "minidiv">
       <h1>set website for panic button</h1>
-      <p class="subtitle">be sure to add https:// at the beginning of the url</p>
-      <input onchange='url = this.value;' placeholder="eg, https://example.com">
+      <p class="subtitle">be sure to add http:// at the beginning of the url</p>
+      <script>
+        var url2
+        </script>
+      <input onchange='url2 = this.value;' placeholder="eg, https://example.com">
+      <button onclick='url = url2' type="button">set</button>
+      <br>
+      <p class="subtitle">default url is <a href="https://google.com">google</a></p>
     </div>
     <script>
       function aboutblank() {
