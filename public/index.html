@@ -10,14 +10,69 @@
   <meta charset="UTF-8" />
   <link href="style.css" rel="stylesheet" type="text/css" />
   <script src="script.js"></script>
-  <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.6.4/dist/jquery.min.js"></script><style>
+  <script src="https://cdn.jsdelivr.net/gh/jquery/jquery@3.6.4/dist/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <style>
     p {
       color: white;
     }
-  </style>
-  <b><a id="Aluben" href="#"><img src="./assets/images/backlogo.png" /></a></b>
+  </style> 
+  <div id="containerforheadertoggle"> 
+    <button id="headertoggle">V</button>
+  </div>
+    <br>
+    
+  </div>
+  <br>
+  <br>
+  <br>
+  <b><a id="Aluben" href="#"><img src="./assets/images/backlogo.png" alt="Aluben"/></a></b>
   <br />
   <br />
+  <script>
+    $(document).ready(function () {
+            $("#cust1").click(function () {
+                $("#cust").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#closesetbutton").click(function () {
+                $("#cust").toggle();
+            });
+        });
+  </script>
+  <script>
+    $(document).ready(function () { 
+           $("#headertoggle").click(function () {
+                $("#header").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#headertoggle").click(function () {
+                $("#headertoggle2").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#headertoggle2").click(function () {
+                $("#header").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#headertoggle").click(function () {
+                $("#headertoggle").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#headertoggle2").click(function () {
+                $("#headertoggle").toggle();
+            });
+        });
+        $(document).ready(function () { 
+           $("#headertoggle2").click(function () {
+                $("#headertoggle2").toggle();
+            });
+        });
+  </script>
 </head>
 
 
@@ -27,8 +82,9 @@
     var button = document.getElementsByTagName("button");
     var url = 'https://google.com';
   </script>
-      <div class="header">
+      <div style="display:none;"class="header" id="header">
         <!--header contents-->
+        
           <button onclick="passcodechange()">change passcode
   </button> 
           <button class="button" type="button" onclick="calculator()">Calculator
@@ -53,7 +109,9 @@
         <button id = "cust1" type="button" onclick="cust()">
           <img id = "settingsimg" src="./assets/images/settings.png"/> 
         </button>
-        
+        <div id="headertoggle2div">
+          <button style="display:none;" id="headertoggle2">^</button>
+        </div>
         <script>
           $("#show").hide();
           $("#show1").hide();
@@ -89,12 +147,13 @@
     }
   </script>
   <div id = "cust">
+    <h1>Settings</h1>
     <div id = "closeset">
       <button id = "closesetbutton" onclick="remove()"><strong>X</strong></button>
     </div>
     <script>
       function remove() {
-        $("#cust").hide();
+        // $("#cust").hide();
       }
       function blue() {
         
@@ -111,7 +170,7 @@
         holy.style.color = color;
       }
       function twi() {
-       
+      
         var color = "#ffffff";
         var backcolor = "#26233a";
         document.body.style.backgroundColor = backcolor;
@@ -284,7 +343,7 @@ setInterval(gcloak, 1000);
     <script>
       $("#cust").hide();
       function cust() {
-  $("#cust").show();
+  // $("#cust").show();
 }
     </script>
   </div>

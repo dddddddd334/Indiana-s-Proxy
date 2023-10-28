@@ -116,12 +116,9 @@ select {
   color: rgb(255, 255, 255);
   background-color: #3d3d3d;
   text-align: center;
-  left: 0%;
-  
-  position: fixed;
   width: 100%;
-  height: 100%;
-  top: 0px;
+  height: 200vh;
+  margin: 0 auto;
   align-items: center;
   align-content: center;
   align-self: center;
@@ -132,6 +129,10 @@ select {
 }
 .subtitle {
   font-size: 29px;
+}
+#containerforheadertoggle {
+  text-align: right;
+  align-items: left;
 }
 #closeset {
   position: absolute;
@@ -151,12 +152,13 @@ select {
   padding: 10px 20px;
 }
 #cust1 {
-  background-color: rgb(36, 36, 36);;
+  background-color: rgb(36, 36, 36);
   text-align: center;
   border: 0px solid;
   padding: 10px 20px;
   width: 20px;
   height: 20px;
+  margin: 0 auto;
 }
 #cust1:hover {
   background-color: rgb(36, 36, 36);
@@ -170,7 +172,7 @@ select {
   width: 28px;
   position: relative;
   top: 7px;
-background-color: #3d3d3d;
+  background-color: #3d3d3d;
 }
 #minidiv {
   background-color: #333333;
@@ -183,4 +185,25 @@ background-color: #3d3d3d;
 
 #randomthingtrustbutt {
   background-color: blue;
+}
+
+#headertoggle2 {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+
+#headertoggle2:hover {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+}
+#headertoggle2div {
+  position: absolute;
+  right: 0px;
+  top: 25px;
+  align-self: right;
+  align-content: right;
+  width: 100%;
+  background-color: aliceblue;
 }
