@@ -134,7 +134,7 @@ select {
 }
 #containerforheadertoggle {
   text-align: right;
-  align-items: left;
+  position: fixed;
 }
 #closeset {
   position: absolute;
