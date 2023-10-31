@@ -242,7 +242,7 @@ var maxnumber = 100;
 var randomNumber = Math.floor(Math.random() * (maxnumber + 1) + minnumber);
 var minjk = 0;
 var maxjk = 1000000;
-var randjk = math.floor(math.random() * 
+var randjk = Math.floor(Math.random() * 
   (maxjk + 1) + minjk);
   if (randjk == "9933") {
   var 1in109 = document.getElementsbyid("7689");
