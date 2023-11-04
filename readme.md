@@ -18,8 +18,6 @@ Aluben services discord has
 
 and more!
 [**do you want malware?**](https://is.gd/Alubendiscord)
-<br>
-[**you want malware don't you**](https://n7y5n2-3000.csb.app/)
 
 ---
 
@@ -35,4 +33,4 @@ and more!
 
 ### this is Aluben coded in node.js
 
-this allows you us to make it so it saves settings to a microsoft Azure sql database or use [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+this allows us to make it so it saves settings to a microsoft Azure sql database or use [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
