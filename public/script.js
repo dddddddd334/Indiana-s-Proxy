@@ -245,8 +245,8 @@ var maxjk = 1000000;
 var randjk = Math.floor(Math.random() * 
   (maxjk + 1) + minjk);
   if (randjk == "9933") {
-  var 1in109 = document.getElementsbyid("7689");
-  1in109.style.display = "block";
+  var yte = document.getElementById('7689');
+  yte.style.display = "block";
   }
 
 // Check if the random number equal to 43
