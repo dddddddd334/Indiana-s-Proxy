@@ -82,7 +82,26 @@
   </script>
       <div style="display:none;"class="header" id="header">
         <!--header contents-->
-        
+        <script>
+          var search;
+          function bing_search() {
+            if (search == null || search == "") {
+              alert("enter something to search");
+            } else {
+              window.open(`https://www.bing.com/search?q=${search}`);
+            }
+          }
+          function google_search() {
+            if (search == null || search == "") {
+              alert("enter something to search");
+            } else {
+              window.open(`https://www.google.com/search?q=${search}`);
+            }
+          }
+          </script>
+        <input id = "search" type="text" onchange="search = this.value;" placeholder="search the web"/>
+        <button onclick="bing_search()">search bing</button>
+        <button onclick="google_search()">search google</button>
           <button onclick="passcodechange()">change passcode
   </button> 
           <button class="button" type="button" onclick="calculator()">Calculator
@@ -97,12 +116,6 @@
     Procky list
   </button>
         <button class="button" type="button" onclick="panic()"><span style="background-color: darkred">panic button click when teacher is close(keybind: `)</span></button>
-        <button id="show1" type="button" onclick="pass2()">
-    Aluben tab options 2
-  </button>
-   <button id="show" type="button" onclick="pass1()">
-    Aluben tab options 1
-  </button>
         
         <button id = "cust1" type="button" onclick="cust()">
           <img id = "settingsimg" src="./assets/images/settings.png"/> 
@@ -110,10 +123,6 @@
         <div id="headertoggle2div">
           <button style="display:none;" id="headertoggle2">^</button>
         </div>
-        <script>
-          $("#show").hide();
-          $("#show1").hide();
-        </script>
       </div>
   <div id = "cust">
     <h1>Settings</h1>
@@ -330,8 +339,6 @@ setInterval(gcloak, 1000);
 
     function hideCustomAlert() {
       $("#myCustomAlert").hide();
-      $("#show").show();
-      $("#show1").show();
     }
     function passcodechange() {
       var oldpasscode = prompt("enter old passcode");
