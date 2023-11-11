@@ -237,11 +237,29 @@ select {
 }
 #search {
   height: 14px;
-  width: 200px;
+  width: 100px;
   padding: 10px;
   border: 2px solid orange;
   border-radius: 5px;
   background-color: #141414;
   color: floralwhite;
   font-size: 13px;
+}
+#search_contain {
+  left: 0%;
+  position: absolute;
+  text-align: left;
+  background-color: #3d3d3d;
+  top: 90px;
+  display: none;
+}
+#closesearchbut {
+  background-color: #3d3d3d;
+  color: white;
+  border: 0px solid #3d3d3d;
+}
+#closesearchbut:hover {
+  background-color: #3d3d3d;
+  color: white;
+  border: 0px solid #3d3d3d;
 }

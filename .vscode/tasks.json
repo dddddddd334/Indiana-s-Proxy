@@ -1,0 +1,23 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "run ipconfig",
+      "type": "shell",
+      "command": "ipconfig /all",
+      "problemMatcher": []
+    },
+    {
+      "label": "install dependencies",
+      "type": "shell",
+      "command": "npm install",
+      "problemMatcher": []
+    },
+    {
+      "type": "Live Preview",
+      "workspacePath": "c:\\Users\\allis\\OneDrive\\Desktop\\coding files\\Aluben-Node",
+      "problemMatcher": [],
+      "label": "Live Preview: Run Server"
+    }
+  ]
+}
