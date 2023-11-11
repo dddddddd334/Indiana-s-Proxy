@@ -18,6 +18,24 @@
       "workspacePath": "c:\\Users\\allis\\OneDrive\\Desktop\\coding files\\Aluben-Node",
       "problemMatcher": [],
       "label": "Live Preview: Run Server"
+    },
+    {
+      "label": "git add",
+      "type": "shell",
+      "command": "git add -A",
+      "problemMatcher": []
+    },
+    {
+      "label": "git commit",
+      "type": "shell",
+      "command": "git commit -m 'A_update'",
+      "problemMatcher": []
+    },
+    {
+      "label": "push commit",
+      "type": "shell",
+      "command": "git push -u origin master",
+      "problemMatcher": []
     }
   ]
 }
