@@ -32,7 +32,7 @@
       "problemMatcher": []
     },
     {
-      "label": "push commit",
+      "label": "git push",
       "type": "shell",
       "command": "git push -u origin master",
       "problemMatcher": []
