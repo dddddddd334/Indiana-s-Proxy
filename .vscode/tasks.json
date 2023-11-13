@@ -2,12 +2,6 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "run ipconfig",
-      "type": "shell",
-      "command": "ipconfig /all",
-      "problemMatcher": []
-    },
-    {
       "label": "install dependencies",
       "type": "shell",
       "command": "npm install",
