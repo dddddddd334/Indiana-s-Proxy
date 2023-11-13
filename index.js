@@ -26,5 +26,5 @@ app.get("/fart", (req, res) => {
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server listeing on port localhost:${port}`);
+  console.log(`app listeing on port 3000 at http://localhost:${port}`);
 });
