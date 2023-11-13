@@ -21,10 +21,10 @@ app.get("/byeblock", (req, res) => {
 });
 
 app.get("/fart", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "fart.html"));
+  res.sendFile(path.join(__dirname, "public", "Fart.html"));
 });
 
 // Start the server
 app.listen(port, () => {
-  console.log(`Server started on port ${port}`);
+  console.log(`Server listeing on port localhost:${port}`);
 });
