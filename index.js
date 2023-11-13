@@ -1,16 +1,30 @@
-//make sure express is install
-const express = require("express");
-//create a express app
-const app = express();
-//set the port
-const port = 3000;
+// server.js
+const express = require("express"); // Import Express
+const app = express(); // Create an Express app
+const path = require("path"); // Import path module
+const port = process.env.PORT || 3000; // Set server port
 
-//serve static files(eg, .html .js etc) from the folder "public" for the code of you express app
+// Serve static files from the 'public' directory
 app.use(express.static("public"));
 
+// Route for '/' serving the index.html file
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
+app.get("/credits", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "credits.html"));
+});
+
+app.get("/byeblock", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "Byeblocker.html"));
+});
+
+app.get("/fart", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "fart.html"));
+});
+
 // Start the server
-app.listen(port),
-  () => {
-    console.log(`app listening on localhost:${port}`);
-  };
-// End of the server code for Aluben go to "public" folder for front-end code
+app.listen(port, () => {
+  console.log(`Server started on port ${port}`);
+});

@@ -1,6 +1,6 @@
 //error//
 function Byblk() {
-  window.open("./Byeblocker.html", "_self");
+  window.open("./Byeblocker", "_self");
 }
 function calculator() {
   expr = prompt(
@@ -20,7 +20,7 @@ function calculator() {
   }
 }
 function credits() {
-  window.open("./credits.html", "_self");
+  window.open("./credits", "_self");
 }
 function gcloak() {
   var link =
@@ -242,12 +242,11 @@ var maxnumber = 100;
 var randomNumber = Math.floor(Math.random() * (maxnumber + 1) + minnumber);
 var minjk = 0;
 var maxjk = 1000000;
-var randjk = Math.floor(Math.random() * 
-  (maxjk + 1) + minjk);
-  if (randjk == "9933") {
-  var yte = document.getElementById('7689');
+var randjk = Math.floor(Math.random() * (maxjk + 1) + minjk);
+if (randjk == "9933") {
+  var yte = document.getElementById("7689");
   yte.style.display = "block";
-  }
+}
 
 // Check if the random number equal to 43
 if (randomNumber == "43") {
