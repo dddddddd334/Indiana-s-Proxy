@@ -1,8 +1,7 @@
 const express = require("express"); // Import Express
 const path = require("path"); // Import path module
-const port = process.env.PORT || 3000; // Set server port
-
 const app = express(); // Create an Express app
+const port = process.env.PORT || 3000; // Set server port
 
 // Serve static files from the 'public' directory
 app.use(express.static("public"));
