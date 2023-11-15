@@ -240,7 +240,7 @@ function panic() {
 }
 window.addEventListener("keydown", function (event) {
   // Check if the ` key was pressed
-  if (event.keyCode === 192) {
+  if (event.key === "`") {
     panic();
   }
 });
