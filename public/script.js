@@ -22,20 +22,6 @@ function calculator() {
 function credits() {
   window.open("./credits", "_self");
 }
-function gcloak() {
-  var link =
-    document.querySelector("link[rel*='icon']") ||
-    document.createElement("link");
-  link.type = "image/x-icon";
-  link.rel = "shortcut icon";
-  link.href =
-    " https://i.scdn.co/image/ab67616d0000b27361caa063de5651b980c3b8bf";
-  document.title = "Aluben";
-  console.log(document.title);
-  document.getElementsByTagName("head")[0].appendChild(link);
-}
-gcloak();
-setInterval(gcloak, 1000);
 
 function discord() {
   window.open("https://discord.gg/Jeybsy2us4");
