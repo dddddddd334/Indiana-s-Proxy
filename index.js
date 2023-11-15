@@ -1,30 +1,23 @@
-// server.js
-const express = require("express"); // Import Express
-const app = express(); // Create an Express app
-const path = require("path"); // Import path module
-const port = process.env.PORT || 3000; // Set server port
+const http = require("http");
+const path = require("path");
+const port = process.env.PORT || 3000;
 
-// Serve static files from the 'public' directory
-app.use(express.static("public"));
-
-// Route for '/' serving the index.html file
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "index.html"));
+const app = http.createServer((req, res) => {
+  if (req.url === "/") {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+  } else if (req.url === "/credits") {
+    res.sendFile(path.join(__dirname, "public", "credits.html"));
+  } else if (req.url === "/byeblock") {
+    res.sendFile(path.join(__dirname, "public", "Byeblocker.html"));
+  } else if (req.url === "/fart") {
+    res.sendFile(path.join(__dirname, "public", "Fart.html"));
+  } else if (req.url === "/list") {
+    res.sendFile(path.join(__dirname, "public", "list.html"));
+  } else {
+    res.sendFile(path.join(__dirname, "public", "404.html"));
+  }
 });
 
-app.get("/credits", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "credits.html"));
-});
-
-app.get("/byeblock", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "Byeblocker.html"));
-});
-
-app.get("/fart", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "Fart.html"));
-});
-
-// Start the server
 app.listen(port, () => {
-  console.log(`app listeing on port 3000 at http://localhost:${port}`);
+  console.log(`Server listening on port ${port}`);
 });
