@@ -7,7 +7,14 @@
     {
       "type": "msedge",
       "request": "launch",
-      "name": "Launch Edge against localhost",
+      "name": "Launch Edge",
+      "url": "http://localhost:3000/",
+      "webRoot": "${workspaceFolder}"
+    },
+    {
+      "type": "msedge",
+      "request": "launch",
+      "name": "Launch Edge (2)",
       "url": "http://localhost:3007/",
       "webRoot": "${workspaceFolder}"
     }
