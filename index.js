@@ -31,6 +31,11 @@ app.get("/list", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "list.html"));
 });
 
+// Route for '/game' serving the games.html file
+app.get("/games", (req, res) => {
+  res.sendFile(path.join(__dirname, "public", "games.html"));
+});
+
 // Handle 404 errors
 app.use((req, res) => {
   res.status(404).sendFile(path.join(__dirname, "public", "404.html"));
