@@ -33,5 +33,5 @@ and more!
 
 ### this is Aluben coded in node.js
 
-this allows us to make it so it saves settings to a microsoft Azure sql database or use [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)
+this allows us to make it so it saves settings to a microsoft Azure sql database or use [localstorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).  
 convenient for the user to save settings
