@@ -1,6 +1,6 @@
 //error//
 function Byblk() {
-  window.open("./Byeblocker", "_self");
+  window.open("./byeblock", "_self");
 }
 function calculator() {
   expr = prompt(
