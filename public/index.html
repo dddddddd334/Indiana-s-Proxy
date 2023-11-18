@@ -168,39 +168,39 @@
           var selectedValue = selectBox.options[selectBox.selectedIndex].value;
           if (selectedValue === "N/A" || selectedValue == null) {
             alert("Please select a valid theme");
-          } else if (selectedValue === "Dark" || selectedValue === null) {
+          } else if (selectedValue === "Dark") {
            document.body.style.backgroundColor = "#000000";
            document.body.style.color = "#ffffff";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "Light" || selectedValue === null) {
+          } else if (selectedValue === "Light") {
             document.body.style.color = "#000000";
            document.body.style.backgroundColor = "#ffffff";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "Twilight" || selectedValue === null) {
+          } else if (selectedValue === "Twilight") {
             document.body.style.color = "#c658ca";
            document.body.style.backgroundColor = "#26233a";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "Ocean" || selectedValue === null) {
+          } else if (selectedValue === "Ocean") {
             document.body.style.color = "#00ffff";
            document.body.style.backgroundColor = "#00008B";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "McDonald's" || selectedValue === null) {
+          } else if (selectedValue === "McDonald's") {
             document.body.style.color = "#e1ff00";
            document.body.style.backgroundColor = "#ff2600";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "UnderGround" || selectedValue === null) {
+          } else if (selectedValue === "UnderGround") {
             document.body.style.color = "#b0afb1";
            document.body.style.backgroundColor = "#673b00";
            document.body.style.backgroundImage = "url()";
-          } else if (selectedValue === "SunnyDay" || selectedValue === null) {
+          } else if (selectedValue === "SunnyDay") {
             document.body.style.color = "#f0ff85";
            document.body.style.backgroundColor = "#93e8ff";
            document.body.style.backgroundImage = "url()";
-           } else if (selectedValue === "Grassland" || selectedValue === null) {
+           } else if (selectedValue === "Grassland") {
             document.body.style.color = "#f45faf";
-            document.body.style.backgroundImage = "url(https://media.istockphoto.com/vectors/seamless-texture-of-a-grass-vector-id119145145?k=6&m=119145145&s=612x612&w=0&h=EDhF97BtnXKxjwO_PPueo43EwX6cUlWr3ZI9V1tAe2c=)";
+            document.body.style.backgroundImage = "url(./assets/images/gashopper.jpg)";
             $("#grass").show();
-          } else if (selectedValue === "StormyDay" || selectedValue === null) {
+          } else if (selectedValue === "StormyDay") {
            document.body.style.color = "#b0afb1";
            document.body.style.backgroundImage = "url(./assets/images/StormyDay.gif)";
           } else if (selectedValue === "custom_theme") {
@@ -239,6 +239,39 @@
       <br>
       <p class="subtitle">default url is <a href="https://google.com">google</a></p>
     </div>
+    <div id="minidiv">
+      <h1>default search engine</h1>
+      <select id="SE" style="color: aliceblue;">
+        <option value="n/a">Set your search engine</option>
+        <option value="Bing">Bing</option>
+        <option value="Yahooo">Yahoo</option>
+        <option value="Google">Google(Default)</option>
+      </select>
+      <button onclick="set_browser()" type="button">Set Search Engine</button>
+        <script>
+           function set_browser() {
+          var engine = "https://google.com/search?q=";
+          var selectBox = document.getElementById("search");
+          var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+          if (selectedValue === "n/a" || selectedValue === "" || selectedValue === null)
+          {
+            alert("please select a valid search engine");
+          }
+          else if (selectedValue === "Bing")
+          {
+            engine = "https://bing.com/search?q="
+          }
+          else if (selectedValue === "Yahoo")
+          {
+            engine = "https://search.yahoo.com/search?p="
+          }
+          else if (selectedValue === "Google")
+          {
+            engine = "https://google.com/search?q="
+          }
+           }
+        </script>
+      </div>
     <script>
       function aboutblank() {
         win = window.open();

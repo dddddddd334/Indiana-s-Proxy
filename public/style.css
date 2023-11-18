@@ -194,12 +194,14 @@ select {
   position: absolute;
   right: 0px;
   top: 25px;
+  max-width: 25px;
 }
 
 #headertoggle2:hover {
   position: absolute;
   left: 0px;
   top: 25px;
+  max-width: 25px;
 }
 #headertoggle2div {
   position: absolute;
@@ -207,7 +209,6 @@ select {
   top: 25px;
   align-self: left;
   align-content: left;
-  width: 100%;
   background-color: aliceblue;
 }
 #trafsftsfwtgsuwgsgwshwj {
