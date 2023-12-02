@@ -1,4 +1,5 @@
 {
   "discord.enabled": true,
-  "cSpell.words": ["byeblock", "Byeblocker"]
+  "cSpell.words": ["byeblock", "Byeblocker"],
+  "editor.inlineSuggest.showToolbar": "onHover"
 }
