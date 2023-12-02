@@ -11,9 +11,9 @@ app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
-// Route for '/credits' serving the credits.html file
-app.get("/credits", (req, res) => {
-  res.sendFile(path.join(__dirname, "public", "credits.html"));
+// Route for '/portal' serving the public\portal\index.html file
+app.get("/portal", (req, res) => {
+  res.sendFile(path.join(__dirname, "public/portal", "index.html"));
 });
 
 // Route for '/byeblock' serving the Byeblocker.html file
