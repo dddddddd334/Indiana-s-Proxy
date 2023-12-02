@@ -1,0 +1,127 @@
+#burger {
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  border-radius: 5px;
+  height: 25px;
+  width: 220px;
+  color: aliceblue;
+  background-color: black;
+  border: 1px solid snow;
+}
+html {
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+iframe {
+  top: 100px;
+  width: 100%;
+  height: 90vh;
+}
+a {
+  color: aliceblue;
+}
+#bookmarks {
+  background-color: #313131;
+  width: 100%;
+  height: 65px;
+  text-align: right;
+  align-items: right;
+}
+#more {
+  right: 15px;
+  border-radius: 1000px;
+  height: 30px;
+  width: auto;
+  background-color: #313131;
+  color: white;
+  border: none;
+  position: absolute;
+}
+i {
+  color: darkgray;
+}
+#option:hover {
+  background-color: rgb(136, 136, 136);
+  cursor: default;
+}
+#bmsdiv {
+  background-color: #242424;
+  border: 1px solid lightgrey;
+  right: 100%;
+  position: absolute;
+  top: 12.5px;
+}
+#more:hover {
+  right: 15px;
+  border-radius: 1000px;
+  height: 30px;
+  width: auto;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border: 2px solid darkgray;
+  position: absolute;
+}
+#homepage:hover {
+  right: 50px;
+  border-radius: 1000px;
+  height: 30px;
+  width: auto;
+  background-color: rgb(39, 39, 39);
+  color: white;
+  border: 2px solid darkgray;
+  position: absolute;
+}
+#homepage {
+  right: 50px;
+  border-radius: 1000px;
+  height: 30px;
+  width: auto;
+  background-color: #313131;
+  color: white;
+  border: none;
+  position: absolute;
+}
+#morediv {
+  background-color: #242424;
+  width: 160px;
+  align-self: right;
+  text-align: left;
+  position: absolute;
+  left: 87.45%;
+  top: 60px;
+}
+#search {
+  position: absolute;
+  top: 50.1%;
+  left: 57vw;
+  height: 30px;
+  width: auto;
+  background-color: black;
+  color: white;
+  border: 2px solid darkgray;
+}
+#option {
+  width: 160px;
+  right: 10px;
+}
+#SEdiv {
+  background-color: #242424;
+  border: 1px solid lightgrey;
+  right: 100%;
+  position: absolute;
+  top: 65px;
+}
+img {
+  height: 150px;
+  width: 150px;
+}
+#title {
+  left: 45%;
+  width: 150px;
+  height: 150px;
+  background-image: url(portal.gif);
+  background-size: 150px, 150px;
+  position: relative;
+}

@@ -71,10 +71,7 @@
             });
         });
         function search_show() {
-          $("#search_contain").show();
-        }
-        function search_hide() {
-          $("#search_contain").hide();
+          window.open("./portal")
         }
   </script>
 </head>
@@ -86,43 +83,14 @@
     var button = document.getElementsByTagName("button");
     var url = 'https://google.com';
   </script>
-            <div id = "search_contain">
-              <p id="search_x">
-                <button id = "closesearchbut" onclick="search_hide()"><strong>X</strong></button>
-              </p>
-              <input id = "search" type="text" onchange="search = this.value;" placeholder="search the web"/>
-              <br><br>
-              <button onclick="bing_search()">search bing</button>
-              <br><br>
-              <button onclick="google_search()">search google</button>
-              <br><br>
-            </div>
       <div style="display:none;"class="header" id="header">
         <!--header contents-->
-        <script>
-          var search;
-          function bing_search() {
-            if (search == null || search == "") {
-              alert("enter something to search");
-            } else {
-              window.open(`https://www.bing.com/search?q=${search}`);
-            }
-          }
-          function google_search() {
-            if (search == null || search == "") {
-              alert("enter something to search");
-            } else {
-              window.open(`https://www.google.com/search?q=${search}`);
-            }
-          }
-          </script>
-          <button onclick="search_show()">search</button>
+          <button onclick="search_show()">portal</button>
           <button onclick="passcodechange()">change passcode
   </button> 
           <button class="button" type="button" onclick="calculator()">Calculator
   </button>  
           <button class="button" type="button" onclick="Byblk()">luanch Byeblocker
-  </button><button class="button" type="button" onclick="credits()">Credits
   </button>
           <button class="button" type="button" onclick="games()">
     Iceland games

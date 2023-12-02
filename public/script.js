@@ -19,9 +19,6 @@ function calculator() {
     void null;
   }
 }
-function credits() {
-  window.open("./credits", "_self");
-}
 
 function discord() {
   window.open("https://discord.gg/Jeybsy2us4");

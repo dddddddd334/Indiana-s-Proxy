@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en" onmousemove="real()">
+  <head id="tabbar">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="portal.gif" type="image/x-icon" />
+    <title id="green">Portal - Searching Google</title>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#more").click(function () {
+          $("#morediv").toggle();
+        });
+      });
+
+      $(document).ready(function () {
+        $(".bms").click(function () {
+          $("#bmsdiv").toggle();
+        });
+      });
+
+      $(document).ready(function () {
+        $("#homepage").click(function () {
+          $(".tabscreen").hide().css("visibility, hidden");
+        });
+      });
+
+      $(document).ready(function () {
+        $("#tab").click(function () {
+          $("#tabscreen").show().css("visibility", "visible");
+        });
+      });
+      $(document).ready(function () {
+        $("#tab").click(function () {
+          $("#burger").hide().css("visibility", "hidden");
+        });
+      });
+      $(document).ready(function () {
+        $("#homepage").click(function () {
+          $("#burger").show().css("visibility", "visible");
+        });
+      });
+      $(document).ready(function () {
+        $("#homepage").click(function () {
+          $("#title").show().css("visibility", "visible");
+        });
+      });
+      $(document).ready(function () {
+        $(".SEchanger").click(function () {
+          $("#SEdiv").toggle();
+        });
+      });
+    </script>
+    <div id="bookmarks">
+      <br class="enterkeyent" />
+      <button id="more">|||</button>
+      <button id="homepage">home page</button>
+      <br class="enterkeyent" />
+      <div style="display: none" id="morediv">
+        <p id="option" class="bms">
+          Bookmarks <br />
+          <i>Ctrl + b</i>
+        </p>
+        <div id="bmsdiv" style="display: none">
+          <input
+            type="text"
+            id="bookmarksite"
+            placeholder="enter url to Bookmark"
+          />
+          <button type="button" onclick="bookmark()">Bookmark</button
+          ><br class="enterkeyent" />
+        </div>
+        <p id="option" class="SEchanger">
+          Search Engine <br />
+          <i>Ctrl + m</i>
+        </p>
+        <div id="SEdiv" style="display: none">
+          <select id="SE">
+            <option value="https://www.google.com/search?q=" id="Google">
+              Default(Google)
+            </option>
+            <option value="https://www.bing.com/search?q=" id="Bing">
+              Bing
+            </option>
+            <option value="https://search.yahoo.com/search?q=" id="Yahoo">
+              Yahoo
+            </option>
+            <option value="https://openverse.org/search/?q=" id="Openverse">
+              Openverse
+            </option>
+            <option
+              value="https://en.wikipedia.org/wiki/Special:Search?go=Go&search="
+              id="Wiki"
+            >
+              Wiki
+            </option>
+            <option
+              value="https://www.slideshare.net/search?searchfrom=header&q="
+              id="SlideShare"
+            >
+              SlideShare
+            </option>
+            <option
+              value="https://www.youtube.com/results?search_query="
+              id="Youtube"
+            >
+              Youtube
+            </option>
+            <option value="https://www.amazon.com/s?k=" id="Amazon">
+              Amazon
+            </option>
+            <option value="https://www.walmart.com/search?q=" id="Walmart">
+              Walmart
+            </option>
+            <option value="https://www.target.com/s?searchTerm=" id="Target">
+              Target
+            </option>
+            <option
+              value="https://www.walgreens.com/search/results.jsp?Ntt="
+              id="Walgreens"
+            >
+              Walgreens
+            </option>
+            <option
+              value="https://www.wolframalpha.com/input?i="
+              id="Wolframalpha"
+            >
+              Wolframalpha
+            </option>
+            <option value="https://www.instacart.com/store/s?k=" id="Instacart">
+              Instacart
+            </option>
+            <option
+              value="https://www.costco.com/CatalogSearch?dept=All&keyword="
+              id="Costco"
+            >
+              Costco
+            </option>
+            <option
+              value="https://www.fredmeyer.com/search?query="
+              id="Fred Mayer"
+            >
+              Fred Mayer
+            </option>
+            <option
+              value="https://districtlms.seattleschools.org/search/user?s="
+              id="Schoology"
+            >
+              Schoology
+            </option>
+            <option
+              value="http://www.blogsearchengine.org/search.html?cx=partner-pub-9634067433254658%3A5laonibews6&cof=FORID%3A10&ie=ISO-8859-1&q="
+              id="BlogSE"
+            >
+              BlogSE
+            </option>
+            <option
+              value="https://www.urbandictionary.com/define.php?term="
+              id="Urban Dictionary"
+            >
+              Urban Dictionary
+            </option>
+            <option
+              value="https://www.pinterest.com/search/pins/?q="
+              id="Pinterest"
+            >
+              Pinterest
+            </option>
+            <option value="https://builtwith.com/" id="Builtwith">
+              Builtwith
+            </option>
+            <option
+              value="https://consumer.huawei.com/en/search/?keyword="
+              id="Huawei"
+            >
+              Huawei
+            </option>
+            <option value="https://www.asos.com/us/search/?q=" id="ASOS">
+              ASOS
+            </option>
+          </select>
+          <button type="button" onclick="displaySE()">Set</button>
+        </div>
+        <p id="option">
+          bookmarks <br />
+          <i>Ctrl + b</i>
+        </p>
+      </div>
+    </div>
+  </head>
+  <body id="bodyliterally">
+    <br />
+    <br />
+    <br />
+    <h1 id="title">
+      <br />
+
+      Portal
+    </h1>
+
+    <input
+      type="text"
+      name="burger"
+      id="burger"
+      placeholder="Enter URL to open OR Search"
+    />
+    <button id="search" onclick="url()">🔎</button>
+  </body>
+</html>
